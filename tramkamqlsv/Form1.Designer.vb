@@ -24,24 +24,27 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Pntab = New System.Windows.Forms.Panel()
-        Me.pnHome = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnDE = New System.Windows.Forms.Button()
-        Me.btnCl = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnGPA = New System.Windows.Forms.Button()
         Me.btnSt = New System.Windows.Forms.Button()
         Me.btnSu = New System.Windows.Forms.Button()
-        Me.btnGPA = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnCl = New System.Windows.Forms.Button()
+        Me.btnDE = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pnHome = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Pntab.SuspendLayout()
-        Me.pnHome.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnHome.SuspendLayout()
         Me.SuspendLayout()
         '
         'Pntab
         '
-        Me.Pntab.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.Pntab.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Pntab.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Pntab.Controls.Add(Me.Button1)
         Me.Pntab.Controls.Add(Me.Label2)
         Me.Pntab.Controls.Add(Me.btnGPA)
         Me.Pntab.Controls.Add(Me.btnSt)
@@ -49,76 +52,34 @@ Partial Class Form1
         Me.Pntab.Controls.Add(Me.btnCl)
         Me.Pntab.Controls.Add(Me.btnDE)
         Me.Pntab.Controls.Add(Me.PictureBox1)
-        Me.Pntab.Dock = System.Windows.Forms.DockStyle.Left
         Me.Pntab.Location = New System.Drawing.Point(0, 0)
         Me.Pntab.Name = "Pntab"
         Me.Pntab.Size = New System.Drawing.Size(191, 655)
         Me.Pntab.TabIndex = 0
         '
-        'pnHome
+        'Label2
         '
-        Me.pnHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(190, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.pnHome.Controls.Add(Me.Label1)
-        Me.pnHome.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnHome.Location = New System.Drawing.Point(191, 0)
-        Me.pnHome.Name = "pnHome"
-        Me.pnHome.Size = New System.Drawing.Size(849, 60)
-        Me.pnHome.TabIndex = 1
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(3, 133)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(188, 38)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Kinh Doanh và Công Nghệ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Hà Nội" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Panel2
+        'btnGPA
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(143, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(191, Byte), Integer))
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(191, 60)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(849, 595)
-        Me.Panel2.TabIndex = 2
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(191, 130)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 21)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(94, 36)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Home"
-        '
-        'btnDE
-        '
-        Me.btnDE.FlatAppearance.BorderSize = 0
-        Me.btnDE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDE.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDE.Location = New System.Drawing.Point(3, 205)
-        Me.btnDE.Name = "btnDE"
-        Me.btnDE.Size = New System.Drawing.Size(182, 56)
-        Me.btnDE.TabIndex = 1
-        Me.btnDE.Text = "Deparment"
-        Me.btnDE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDE.UseVisualStyleBackColor = True
-        '
-        'btnCl
-        '
-        Me.btnCl.FlatAppearance.BorderSize = 0
-        Me.btnCl.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCl.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCl.Location = New System.Drawing.Point(3, 258)
-        Me.btnCl.Name = "btnCl"
-        Me.btnCl.Size = New System.Drawing.Size(182, 56)
-        Me.btnCl.TabIndex = 1
-        Me.btnCl.Text = "Class"
-        Me.btnCl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCl.UseVisualStyleBackColor = True
+        Me.btnGPA.FlatAppearance.BorderSize = 0
+        Me.btnGPA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGPA.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGPA.Location = New System.Drawing.Point(3, 417)
+        Me.btnGPA.Name = "btnGPA"
+        Me.btnGPA.Size = New System.Drawing.Size(182, 56)
+        Me.btnGPA.TabIndex = 1
+        Me.btnGPA.Text = "GPA"
+        Me.btnGPA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnGPA.UseVisualStyleBackColor = True
         '
         'btnSt
         '
@@ -146,29 +107,82 @@ Partial Class Form1
         Me.btnSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSu.UseVisualStyleBackColor = True
         '
-        'btnGPA
+        'btnCl
         '
-        Me.btnGPA.FlatAppearance.BorderSize = 0
-        Me.btnGPA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGPA.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGPA.Location = New System.Drawing.Point(3, 417)
-        Me.btnGPA.Name = "btnGPA"
-        Me.btnGPA.Size = New System.Drawing.Size(182, 56)
-        Me.btnGPA.TabIndex = 1
-        Me.btnGPA.Text = "GPA"
-        Me.btnGPA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnGPA.UseVisualStyleBackColor = True
+        Me.btnCl.FlatAppearance.BorderSize = 0
+        Me.btnCl.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCl.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCl.Location = New System.Drawing.Point(3, 258)
+        Me.btnCl.Name = "btnCl"
+        Me.btnCl.Size = New System.Drawing.Size(182, 56)
+        Me.btnCl.TabIndex = 1
+        Me.btnCl.Text = "Class"
+        Me.btnCl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCl.UseVisualStyleBackColor = True
         '
-        'Label2
+        'btnDE
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(3, 133)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(188, 38)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Kinh Doanh và Công Nghệ" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Hà Nội" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnDE.FlatAppearance.BorderSize = 0
+        Me.btnDE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDE.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDE.Location = New System.Drawing.Point(3, 205)
+        Me.btnDE.Name = "btnDE"
+        Me.btnDE.Size = New System.Drawing.Size(182, 56)
+        Me.btnDE.TabIndex = 1
+        Me.btnDE.Text = "Deparment"
+        Me.btnDE.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDE.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(191, 130)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'pnHome
+        '
+        Me.pnHome.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pnHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.pnHome.Controls.Add(Me.Label1)
+        Me.pnHome.Location = New System.Drawing.Point(191, 0)
+        Me.pnHome.Name = "pnHome"
+        Me.pnHome.Size = New System.Drawing.Size(849, 60)
+        Me.pnHome.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(43, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(94, 36)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Home"
+        '
+        'Panel2
+        '
+        Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(223, Byte), Integer))
+        Me.Panel2.Location = New System.Drawing.Point(191, 60)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(849, 595)
+        Me.Panel2.TabIndex = 2
+        '
+        'Button1
+        '
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Times New Roman", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(37, 575)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(100, 40)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "EXIT"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -182,9 +196,9 @@ Partial Class Form1
         Me.Text = "Form1"
         Me.Pntab.ResumeLayout(False)
         Me.Pntab.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnHome.ResumeLayout(False)
         Me.pnHome.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -200,4 +214,10 @@ Partial Class Form1
     Friend WithEvents btnCl As Button
     Friend WithEvents btnDE As Button
     Friend WithEvents Label2 As Label
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Friend WithEvents Button1 As Button
 End Class

@@ -73,11 +73,41 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DE.Designer.vb">
+      <DependentUpon>DE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DE.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClass.Designer.vb">
+      <DependentUpon>frmClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGPA.Designer.vb">
+      <DependentUpon>frmGPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudent.Designer.vb">
+      <DependentUpon>frmStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubject.Designer.vb">
+      <DependentUpon>frmSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubject.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,8 +127,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DE.resx">
+      <DependentUpon>DE.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClass.resx">
+      <DependentUpon>frmClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGPA.resx">
+      <DependentUpon>frmGPA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudent.resx">
+      <DependentUpon>frmStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubject.resx">
+      <DependentUpon>frmSubject.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
