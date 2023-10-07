@@ -26,24 +26,24 @@ Partial Class fmDe
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.DataSet1 = New tramkamqlsv.DataSet1()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnThem = New System.Windows.Forms.Button()
         Me.btnSuaDE = New System.Windows.Forms.Button()
         Me.btnXoaDE = New System.Windows.Forms.Button()
         Me.btnInDe = New System.Windows.Forms.Button()
-        Me.DataSet1 = New tramkamqlsv.DataSet1()
         Me.DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
+        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.IDDeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NameDeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -78,6 +78,11 @@ Partial Class fmDe
         Me.TextBox1.Size = New System.Drawing.Size(271, 29)
         Me.TextBox1.TabIndex = 1
         '
+        'DataSet1
+        '
+        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'TextBox2
         '
         Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.DataSet1, "Deparment.Name_De", True))
@@ -96,7 +101,7 @@ Partial Class fmDe
         Me.DataGridView1.DataSource = Me.DataSet1
         Me.DataGridView1.Location = New System.Drawing.Point(37, 32)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(765, 332)
+        Me.DataGridView1.Size = New System.Drawing.Size(763, 332)
         Me.DataGridView1.TabIndex = 3
         '
         'btnThem
@@ -147,11 +152,6 @@ Partial Class fmDe
         Me.btnInDe.Text = "Print"
         Me.btnInDe.UseVisualStyleBackColor = False
         '
-        'DataSet1
-        '
-        Me.DataSet1.DataSetName = "DataSet1"
-        Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'DataSet1BindingSource
         '
         Me.DataSet1BindingSource.DataSource = Me.DataSet1
@@ -161,6 +161,11 @@ Partial Class fmDe
         '
         Me.OleDbSelectCommand1.CommandText = "SELECT        ID_De, Name_De" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            Deparment"
         Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
+        '
+        'OleDbConnection1
+        '
+        Me.OleDbConnection1.ConnectionString = "Provider=SQLOLEDB.1;Data Source=NEXUSLITE-PC;Integrated Security=SSPI;Initial Cat" &
+    "alog=lt"
         '
         'OleDbInsertCommand1
         '
@@ -190,22 +195,19 @@ Partial Class fmDe
         Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "Deparment", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("ID_De", "ID_De"), New System.Data.Common.DataColumnMapping("Name_De", "Name_De")})})
         Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbUpdateCommand1
         '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=SQLOLEDB.1;Data Source=NEXUSLITE-PC;Integrated Security=SSPI;Initial Cat" &
-    "alog=lt"
-        '
         'IDDeDataGridViewTextBoxColumn
         '
         Me.IDDeDataGridViewTextBoxColumn.DataPropertyName = "ID_De"
-        Me.IDDeDataGridViewTextBoxColumn.HeaderText = "ID_De"
+        Me.IDDeDataGridViewTextBoxColumn.HeaderText = "Department ID"
         Me.IDDeDataGridViewTextBoxColumn.Name = "IDDeDataGridViewTextBoxColumn"
+        Me.IDDeDataGridViewTextBoxColumn.Width = 300
         '
         'NameDeDataGridViewTextBoxColumn
         '
         Me.NameDeDataGridViewTextBoxColumn.DataPropertyName = "Name_De"
-        Me.NameDeDataGridViewTextBoxColumn.HeaderText = "Name_De"
+        Me.NameDeDataGridViewTextBoxColumn.HeaderText = "Department Name"
         Me.NameDeDataGridViewTextBoxColumn.Name = "NameDeDataGridViewTextBoxColumn"
+        Me.NameDeDataGridViewTextBoxColumn.Width = 420
         '
         'fmDe
         '
@@ -224,8 +226,8 @@ Partial Class fmDe
         Me.Controls.Add(Me.Label1)
         Me.Name = "fmDe"
         Me.Text = "fromDE"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
