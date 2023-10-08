@@ -234,17 +234,17 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(547, 14)
+        Me.Label4.Location = New System.Drawing.Point(526, 14)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(256, 16)
+        Me.Label4.Size = New System.Drawing.Size(294, 16)
         Me.Label4.TabIndex = 1
-        Me.Label4.Text = "https://github.com/Lolicatz/tramkamqlsv.git"
+        Me.Label4.Text = "https://github.com/Lolicatz/tramkamqlsvnopbai.git"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(452, 14)
+        Me.Label6.Location = New System.Drawing.Point(431, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(98, 16)
         Me.Label6.TabIndex = 0
