@@ -39,9 +39,9 @@ Partial Class Form1
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Pntab.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnHome.SuspendLayout()
@@ -240,15 +240,15 @@ Partial Class Form1
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "https://github.com/Lolicatz/tramkamqlsv.git"
         '
-        'Label3
+        'Label6
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(134, 14)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(240, 16)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "https://www.facebook.com/toiucau.dmt/"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(452, 14)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(98, 16)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Github Lolicatz :"
         '
         'Label5
         '
@@ -260,15 +260,15 @@ Partial Class Form1
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Fb Nguyễn Trang :"
         '
-        'Label6
+        'Label3
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(452, 14)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(98, 16)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Github Lolicatz :"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(134, 14)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(240, 16)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "https://www.facebook.com/toiucau.dmt/"
         '
         'Form1
         '
@@ -280,7 +280,7 @@ Partial Class Form1
         Me.Controls.Add(Me.pnHome)
         Me.Controls.Add(Me.Pntab)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Student management "
         Me.Pntab.ResumeLayout(False)
         Me.Pntab.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

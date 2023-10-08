@@ -84,11 +84,11 @@
     <Compile Include="DE.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Student management .vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include=".Designer.vb">
+      <DependentUpon>Student management .vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmClass.Designer.vb">
@@ -135,8 +135,8 @@
     <EmbeddedResource Include="DE.resx">
       <DependentUpon>DE.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Student management .resx">
+      <DependentUpon>Student management .vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClass.resx">
       <DependentUpon>frmClass.vb</DependentUpon>
